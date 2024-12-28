@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Ad Blocker",
+    "version": "1.0",
+    "description": "Blocks YouTube ads.",
+    "permissions": [
+      "declarativeNetRequest"
+    ],
+    "host_permissions": [
+      "https://*.youtube.com/*",
+      "https://*.googleads.g.doubleclick.net/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "declarative_net_request": {
+      "rule_resources": [
+        {
+          "id": "block_youtube_ads",
+          "enabled": true,
+          "path": "rules.json"
+        }
+      ]
+    }
+  }
+  

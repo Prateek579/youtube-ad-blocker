@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||youtube.com/get_video_info",
+            "resourceTypes": [
+                "xmlhttprequest",
+                "media"
+            ]
+        }
+    },
+    {
+        "id": 2,
+        "priority": 1,
+        "action": {
+            "type": "block"
+        },
+        "condition": {
+            "urlFilter": "||googleads.g.doubleclick.net/",
+            "resourceTypes": [
+                "script",
+                "sub_frame"
+            ]
+        }
+    }
+]
